@@ -22,10 +22,7 @@ module.exports = connection; */
 // Configuration/database.js
 const Sequelize = require('sequelize');
 
-const db = new Sequelize('railway', 'root', 'AdceE1EgFbB1AcgCbF32ABFeDdfH45cB', {
-  host: 'viaduct.proxy.rlwy.net',
-  dialect: 'mysql', // sesuaikan dengan jenis database yang Anda gunakan
-});
+const db = new Sequelize(process.env.MYSQL_PRIVATE_URL);
 
 // Uji koneksi ke database
 db.authenticate()
