@@ -6,10 +6,10 @@ const registrasiRoutes = require("./Routes/userRoutes");
 const loginRoutes = require("./Routes/authRoutes");
 const User = require('./Models/userModel');
 const db = require("./Configuration/database"); // Import file konfigurasi database
+const dotenv = require('dotenv');
 
 const app = express();
 const port = process.env.PORT || 32920;
-const dotenv = require('dotenv');
 
 dotenv.config()
 app.use(cors());
