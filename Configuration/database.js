@@ -23,7 +23,7 @@ module.exports = connection; */
 const Sequelize = require('sequelize');
 
 const db = new Sequelize('kos_revou', 'root', '', {
-  host: 'localhost',
+  host: 'viaduct.proxy.rlwy.net',
   dialect: 'mysql', // sesuaikan dengan jenis database yang Anda gunakan
 });
 
