@@ -8,7 +8,7 @@ const User = require('./Models/userModel');
 const db = require("./Configuration/database"); // Import file konfigurasi database
 
 const app = express();
-const port = 32920;
+const port = process.env.PORT || 32920;
 const dotenv = require('dotenv');
 
 dotenv.config()
