@@ -22,7 +22,7 @@ module.exports = connection; */
 // Configuration/database.js
 const Sequelize = require('sequelize');
 
-const db = new Sequelize('kos_revou', 'root', '', {
+const db = new Sequelize('railway', 'root', '', {
   host: 'viaduct.proxy.rlwy.net',
   dialect: 'mysql', // sesuaikan dengan jenis database yang Anda gunakan
 });
